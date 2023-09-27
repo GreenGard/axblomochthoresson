@@ -105,7 +105,7 @@
         <!-- 
         - #HERO
       -->
-
+      
         <section class="hero" id="home">
           <figure class="hero-banner">
             <picture>
@@ -115,9 +115,6 @@
                 class="w-100">
             </picture>
           </figure>
-
-          
-
 
           <div class="hero-content">
             <h2 
@@ -136,7 +133,7 @@
               data-en="Get in touch"
               data-se="Kontakta oss"
             ></a>
-            >
+            
           
           </div>
 
@@ -164,7 +161,7 @@
             </li>
           </ul>
 
-          <a href="#stats" class="scroll-down">Scroll</a>
+          <!-- <a href="#stats" class="scroll-down">Scroll</a> -->
         </section>
 
        
@@ -175,7 +172,7 @@
         <section class="about" id="about">
           <figure class="about-banner">
             <img
-              src="./assets/images/about-banner.png"
+              src="./services.JPG"
               alt="little about us"
               class="w-100"
             />
@@ -188,7 +185,7 @@
             id="us"
             data-en="About us"
             data-se="Om oss">
-        ></p>
+        </p>
 
             <h2 class="h3 section-title"
             id="help"
@@ -212,6 +209,9 @@
         <section class="contact" id="contact">
           <div class="contact-content section-content">
             <p class="section-subtitle"
+            id="contactField"
+            data-en="Contact"
+            data-se="Kontakt"
             >Contact</p>
 
             <h2 class="h3 section-title"
@@ -222,7 +222,12 @@
               Financial Questions? Send a Message, We've Got the Answers
             </h2>
 
-            <p class="section-text">
+            <p class="section-text"
+            id="contactText"
+            data-en="Get in touch and let me know how i can help. Fill out the form and
+            i’ll be in touch as soon as possible."
+            data-se="Fyll i formuläret så kontaktar vi dig!"
+            >
               Get in touch and let me know how i can help. Fill out the form and
               i’ll be in touch as soon as possible.
             </p>
@@ -233,13 +238,7 @@
                   <ion-icon name="location-outline"></ion-icon>
                 </div>
 
-                <!-- <div class="wrapper">
-                  <h3 class="h4 contact-item-title">Address:</h3>
-
-                  <address class="contact-info">
-                    941 Saqrqorish Road, alandalos, grnata, wa 47122-4194
-                  </address>
-                </div> -->
+            
               </li>
 
               <li class="contact-list-item">
@@ -248,14 +247,18 @@
                 </div>
 
                 <div class="wrapper">
-                  <h3 class="h4 contact-item-title">Phone:</h3>
+                  <h3 class="h4 contact-item-title"
+                  id="phone"
+                  data-en="Phone"
+                  data-se="Telefon"
+                  >Phone:</h3>
 
                   <a href="tel:+46739294680" class="contact-info"
-                    >(46) 739 264 680</a
+                    >(+46) (0)739 264 680</a
                   >
 
                   <a href="tel:+46730844392" class="contact-info"
-                    >(46) 730 844 392</a
+                    >(+46) (0)730 844 392</a
                   >
                 </div>
               </li>
@@ -305,7 +308,10 @@
 
           <form method="post" action="./index.html" class="contact-form">
             <div class="form-wrapper">
-              <label for="name" class="form-label">Name</label>
+              <label for="name" class="form-label"
+              id="user"
+              data-en= "Name"
+              data-se="För och Efternamn">Name</label>
 
               <div class="input-wrapper">
                 <input
@@ -339,7 +345,11 @@
             </div>
 
             <div class="form-wrapper">
-              <label for="phone" class="form-label">Phone</label>
+              <label for="phone" class="form-label"
+              id="tele"
+              data-en= "Phone"
+              data-se="Telefon"
+              >Phone</label>
 
               <div class="input-wrapper">
                 <input
@@ -358,7 +368,10 @@
             </div>
 
             <div class="form-wrapper">
-              <label for="message" class="form-label">Message</label>
+              <label for="message" class="form-label"
+              id="message"
+              data-en= "Message"
+              data-se="Meddelande">Message</label>
 
               <div class="input-wrapper">
                 <textarea
@@ -373,7 +386,10 @@
               </div>
             </div>
             <div class="g-recaptcha" data-sitekey="6Ldbdg0TAAAAAI7KAf72Q6uagbWzWecTeBWmrCpJ"></div>
-            <button type="submit" class="btn btn-primary">Send</button>
+            <button type="submit" class="btn btn-primary"
+            id="send"
+            data-en="Send"
+            data-se="Skicka">Send</button>
           </form>
         </section>
       </article>

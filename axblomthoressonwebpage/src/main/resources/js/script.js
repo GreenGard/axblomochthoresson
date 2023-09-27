@@ -91,7 +91,14 @@ function toggleLanguage() {
   const usElement = document.getElementById("us");
   const helpElement = document.getElementById("help");
   const accountingElement = document.getElementById("accounting");
+  const contactElement = document.getElementById("contactField");
+  const contactTextElement = document.getElementById("contactText");
+  const phoneElement = document.getElementById("phone");
+  const nameElement = document.getElementById("user");
+  const teleElement = document.getElementById("tele");
+  const messageElement = document.getElementById("message");
   const sendMessageElement = document.getElementById("sendMessage");
+  const sendElement = document.getElementById("send");
 
   if (selectedLang === "en") {
     navOneElement.textContent = "Home.";
@@ -101,11 +108,19 @@ function toggleLanguage() {
       "Balancing Your Books, Maximizing Your Success!";
     greetingElement.textContent = "Get in touch";
     usElement.textContent = "About us";
-    helpElement.textContent = "We help you!";
+    helpElement.textContent = "We can help you!";
     accountingElement.textContent =
       "We are an accounting firm consisting of experienced accounting economists who strive for and enjoy close and personal contact and collaboration with our clients. We assist you throughout the journey with your company, from start to finish, whether you are a sole proprietor or have a limited company. We offer services in finance and accounting";
+    contactElement.textContent = "Contact";
+    contactTextElement.textContent =
+      "Get in touch and let me know how i can help. Fill out the form and i’ll be in touch as soon as possible.";
     sendMessageElement.textContent =
-      " Financial Questions? Send a Message, We've Got the Answers";
+      "Financial Questions? Send a Message, We've Got the Answers";
+    phoneElement.textContent = "Phone";
+    nameElement.textContent = "Name";
+    teleElement.textContent = "Phone";
+    messageElement.textContent = "Message";
+    sendElement.textContent = "Send";
     contactLink.textContent = contactLink.getAttribute("data-en");
   } else if (selectedLang === "se") {
     navOneElement.textContent = "Hem.";
@@ -117,9 +132,15 @@ function toggleLanguage() {
     helpElement.textContent = "Vi hjälper dig!";
     accountingElement.textContent =
       "Vi är en redovisningsbyrå bestående av erfarna redovisningsekonomer som strävar efter och trivs med nära och personlig kontakt och samarbete med våra kunder. Vi hjälper dig genom hela resan med ditt företag, från start till mål, oavsett om du är enskild näringsidkare eller har ett aktiebolag. Vi erbjuder tjänster inom ekonomi och redovisning";
+    contactElement.textContent = "Kontakt";
+    contactTextElement.textContent = "Fyll i formuläret så kontaktar vi dig!";
     sendMessageElement.textContent =
       "Finansiella frågor? Skicka ett meddelande till oss, Vi har svaren!";
-
+    phoneElement.textContent = "Telefon";
+    nameElement.textContent = "Namn";
+    teleElement.textContent = "Telefon";
+    messageElement.textContent = "Meddelande";
+    sendElement.textContent = "Skicka";
     contactLink.textContent = contactLink.getAttribute("data-se");
   }
 }
