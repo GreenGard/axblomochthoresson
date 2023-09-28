@@ -32,6 +32,11 @@ window.addEventListener("scroll", function () {
 const navToggleBtn = document.querySelector("[data-nav-toggle-btn]");
 const navbar = document.querySelector("[data-navbar]");
 
+function closeMobileMenu() {
+  elemToggleFunc(navToggleBtn);
+  elemToggleFunc(navbar);
+  elemToggleFunc(document.body);
+}
 navToggleBtn.addEventListener("click", function () {
   elemToggleFunc(navToggleBtn);
   elemToggleFunc(navbar);
@@ -151,3 +156,17 @@ langSelect.addEventListener("change", toggleLanguage);
 
 // Initialize the greeting and link text based on the initially selected language
 toggleLanguage();
+
+function onClick(e) {
+  e.preventDefault();
+  grecaptcha.enterprise.ready(async () => {
+    const token = await grecaptcha.enterprise.execute(
+      "6LdJcV0oAAAAAFfukwHMWFe3BDjouzvdm8W87-jH",
+      { action: "LOGIN" }
+    );
+    // IMPORTANT: The 'token' that results from execute is an encrypted response sent by
+    // reCAPTCHA Enterprise to the end user's browser.
+    // This token must be validated by creating an assessment.
+    // See https://cloud.google.com/recaptcha-enterprise/docs/create-assessment
+  });
+}

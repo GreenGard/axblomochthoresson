@@ -224,6 +224,13 @@ body.active {
 .h4 {
   font-size: var(--fs-5);
 }
+.aboutus {
+  width: 95%;
+  filter: saturate(0.5);
+  border-radius: 10px;
+  opacity: 0.8;
+  box-shadow: var(--shadow-1);
+}
 
 .w-100 {
   width: 95%;
@@ -598,6 +605,15 @@ main {
   max-width: 400px;
   margin-inline: auto;
   margin-bottom: 80px;
+}
+
+@media screen and (max-width: 800px) {
+  .about-banner img {
+    display: none;
+  }
+  .hero-title {
+    margin-top: 10px;
+  }
 }
 
 .about .btn {
